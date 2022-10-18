@@ -1,0 +1,18 @@
+.link {
+    text-decoration: none;
+    color: #FF6060;
+}
+
+li {
+    list-style: none;
+}
+
+.active {
+    border-bottom: 1px solid #FF6060;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 50px;
+}
