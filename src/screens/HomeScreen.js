@@ -1,15 +1,30 @@
-import React, { Component } from 'react'
-import AppContainer from '../appContainer/AppContainer';
+import React, { useEffect, useState } from 'react'
+import AccommodationManager from '../models/AccomodationManager';
 
 
-export class HomeScreen extends Component {
-    render() {
-        return (
-            <AppContainer>
-                <div>HomeScreen</div>
-            </AppContainer>
-        )
+
+const HomeScreen = () => {
+
+    const handleData = async () => {
+        let model = new AccommodationManager();
+        let datas = await model.getAllAcco();
+        console.log(datas);
     }
+
+    useEffect(() => {
+        handleData()
+            .then((logements) => {
+                console.log(logements);
+            });
+    }, [])
+
+
+    return (
+
+        <div>HomeScreen</div>
+
+    )
+
 }
 
 

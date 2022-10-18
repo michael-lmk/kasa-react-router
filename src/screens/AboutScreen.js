@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import AppContainer from '../appContainer/AppContainer'
+// import AppContainer from '../appContainer/AppContainer'
 
-export class AboutScreen extends Component {
-    render() {
-        return (
-            <AppContainer>
-                <div>AboutScreen</div>
-            </AppContainer>
-        )
-    }
+const AboutScreen = () => {
+
+    return (
+        // <AppContainer>
+        <div>AboutScreen</div>
+        // </AppContainer>
+    )
+
 }
 
 export default AboutScreen

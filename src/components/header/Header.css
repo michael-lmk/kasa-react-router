@@ -16,3 +16,12 @@ header {
     justify-content: space-between;
     margin: 5px 50px;
 }
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
