@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/images/logo.svg';
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <header>
             <div className='header-left'>
-                <img src={logo}></img>
+                <img src={logo} alt="logo"></img>
             </div>
             <div className='header-middle'></div>
             <div className='header-right nav'>

@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class NotFoundScreen extends Component {
-  render() {
-    return (
-      <div>NotFoundScreen</div>
-    )
-  }
+const NotFoundScreen = () => {
+
+  return (
+    <div>NotFoundScreen</div>
+  )
+
 }
+
+export default NotFoundScreen;
