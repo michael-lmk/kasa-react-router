@@ -7,14 +7,17 @@ export default function Header() {
 
     return (
         <header>
-            <img src={logo}></img>
-            <div className='nav'>
+            <div className='header-left'>
+                <img src={logo}></img>
+            </div>
+            <div className='header-middle'></div>
+            <div className='header-right nav'>
                 <ul>
                     <li>
-                        <NavLink className={({isActive}) => "link" + (isActive ? " active" : "")} to={'/'} end>Accueil</NavLink>
+                        <NavLink className={({ isActive }) => "link" + (isActive ? " active" : "")} to={'/'} end>Accueil</NavLink>
                     </li>
                     <li>
-                        <NavLink className={({isActive}) => "link" + (isActive ? " active" : "")} to={'/qui-sommes-nous'}>A propos</NavLink>
+                        <NavLink className={({ isActive }) => "link" + (isActive ? " active" : "")} to={'/qui-sommes-nous'}>A propos</NavLink>
                     </li>
                 </ul>
             </div>

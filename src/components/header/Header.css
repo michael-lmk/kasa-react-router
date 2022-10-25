@@ -14,7 +14,17 @@ li {
 header {
     display: flex;
     justify-content: space-between;
-    margin: 5px 50px;
+    margin-top: 15px;
+}
+
+.header-left {
+    flex: 1;
+}
+.header-middle {
+    flex: 2;
+}
+.header-right {
+    flex: 1;
 }
 
 .nav ul {
@@ -24,4 +34,9 @@ header {
 
 .nav ul li {
     margin: 0 15px;
+    white-space: nowrap;
+}
+
+header img {
+    width: 150px;
 }

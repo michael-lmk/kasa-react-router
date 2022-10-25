@@ -5,11 +5,10 @@ import {
     Routes
 } from "react-router-dom";
 import AppContainer from "../appContainer/AppContainer";
-import Header from "../components/header/Header";
-import AboutScreen from "../screens/AboutScreen";
-import AccommodationDetail from "../screens/AccommodationDetailScreen";
-import HomeScreen from "../screens/HomeScreen";
-import NotFoundScreen from "../screens/NotFoundScreen";
+import AboutScreen from "../screens/aboutScreen/AboutScreen";
+import AccommodationDetail from "../screens/accommodationScreen/AccommodationScreen";
+import HomeScreen from "../screens/homeScreen/HomeScreen";
+import NotFoundScreen from "../screens/notFoundScreen/NotFoundScreen";
 
 const Navigation = () => {
 
@@ -18,7 +17,7 @@ const Navigation = () => {
             <AppContainer>
                 <Routes>
                     <Route path="/" element={<HomeScreen />} />
-                    <Route path="/logement" element={<AccommodationDetail />} />
+                    <Route path="/logement/:id" element={<AccommodationDetail />} />
                     <Route path="/qui-sommes-nous" element={<AboutScreen />} />
                     <Route path="*" element={<NotFoundScreen />} />
                 </Routes>
