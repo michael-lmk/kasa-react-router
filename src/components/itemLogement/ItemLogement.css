@@ -30,11 +30,11 @@
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5))
 }
 
-.title{
+.item-container .title{
     margin: 10px;
 }
 
-.title h4 {
+.item-container .title h4 {
     padding: 0;
     width: 280px;
     height: 40px;

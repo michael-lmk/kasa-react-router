@@ -4,6 +4,7 @@ import './AccommodationScreen.css';
 import chevron from '../../assets/images/chevron.svg';
 import star from '../../assets/images/star.svg';
 import emptyStar from '../../assets/images/empty-star.svg';
+import ItemAccordion from '../../components/accordion/ItemAccordion';
 
 const AccommodationScreen = () => {
   const { state } = useLocation();
@@ -55,7 +56,7 @@ const AccommodationScreen = () => {
             <button className='left' onClick={() => {
               slideToLeft(indexImgCarrousel);
             }}>
-              <img src={chevron} alt="left"/>
+              <img src={chevron} alt="left" />
             </button>
           </div>
           <div className='current-img-num'>
@@ -65,7 +66,7 @@ const AccommodationScreen = () => {
             <button className='right' onClick={() => {
               slideToRight(indexImgCarrousel)
             }}>
-              <img src={chevron} alt="right"/>
+              <img src={chevron} alt="right" />
             </button>
           </div>
         </div>
@@ -90,18 +91,36 @@ const AccommodationScreen = () => {
               <span>{host[0]}</span>
               <span>{host[1]}</span>
             </div>
-            <img alt='annonceur' src={state.host.picture}/>
+            <img alt='annonceur' src={state.host.picture} />
           </div>
           <div>
-            <img src={star} alt="star"/>
-            <img src={star} alt="star"/>
-            <img src={star} alt="star"/>
-            <img src={emptyStar} alt="star"/>
-            <img src={emptyStar} alt="star"/>
+            <img src={star} alt="star" />
+            <img src={star} alt="star" />
+            <img src={star} alt="star" />
+            <img src={emptyStar} alt="star" />
+            <img src={emptyStar} alt="star" />
           </div>
 
         </div>
 
+      </section>
+      <section className='accordion-content'>
+        <ItemAccordion title={'Description'}>
+          <p>
+            {state.description}
+          </p>
+        </ItemAccordion>
+        <ItemAccordion title={'Équipements'}>
+          <ul>
+            
+            {state.equipments.map((equipment) => {
+              return (
+                <li>{equipment}</li>
+              )
+            })}
+
+          </ul>
+        </ItemAccordion>
       </section>
     </div >
   )

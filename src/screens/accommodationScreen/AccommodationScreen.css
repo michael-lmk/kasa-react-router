@@ -79,14 +79,15 @@ button img {
 h1 {
     font-size: 36px;
     font-weight: 500;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 h3 {
     font-size: 18px;
     font-weight: 500;
     line-height: 25.67px;
-    margin: 5px;
+    margin: 5px 0;
+    margin-bottom: 25px;
 }
 
 .row {
@@ -107,7 +108,7 @@ h3 {
     min-width: 115px;
     font-size: 14px;
     padding: 3px 10px;
-    margin: 10px;
+    margin-right: 20px;
     background-color: #FF6060;
     border-radius: 15px;
 }
@@ -132,6 +133,13 @@ h3 {
     margin: 5px;
 }
 
+.accordion-content {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+  
+}
+
 @media screen and (max-width: 840px) {
     .header {
         flex-direction: column;
@@ -143,7 +151,7 @@ h3 {
     }
 
     .tag {
-
+        margin-top: 10px;
         min-width: 84px;
         font-size: 10px;
     }
@@ -153,10 +161,11 @@ h3 {
         flex-wrap: wrap;
     }
 
-    .conetnt-host {
+    .content-host {
         display: flex;
-        flex-direction: row-reverse;
         justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-top: 25px;
     }
 
     h1 {
@@ -166,5 +175,13 @@ h3 {
 
     h3 {
         font-size: 14px;
+    }
+    .accordion-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .accordion-item{
+        margin: 25px 0;
+        width: 100%!important;
     }
 }
