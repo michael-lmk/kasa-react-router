@@ -1,0 +1,48 @@
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    flex : 1;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.message {
+    text-align: center;
+    font-size: 30px;
+}
+.code-erreur {
+    text-align: center;
+    font-size: 288px;
+    margin: 0;
+}
+
+.div-back {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.back-home {
+ 
+    color : #FF6060;
+
+}
+
+
+@media (max-width: 700px) {
+    .code-erreur {
+        font-size: 200px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .code-erreur {
+        font-size: 96px;
+    }
+    .message {
+        font-size: 18px;
+    }
+    .back-home {
+        font-size: 14px;
+    }
+}

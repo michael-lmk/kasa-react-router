@@ -1,18 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './ItemLogement.css'
-const ItemLogement = ({ data }) => {
+const ItemLogement = ({ id, image, title }) => {
     return (
         <div
             className='item-container'>
             <Link
-                to={`/logement/${data.id}`} 
-                state={data}
+                to={`/logement/${id}`} 
+                state={id}
                 className='item-bg' 
-                style={{ backgroundImage: `url(${data.cover})` }}
+                style={{ backgroundImage: `url(${image})` }}
             >
                     <div className='title'>
-                        <h4>{data.title}</h4>
+                        <h4>{title}</h4>
                     </div>
             </Link>
 

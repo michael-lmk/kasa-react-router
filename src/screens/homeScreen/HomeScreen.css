@@ -15,6 +15,28 @@ a {
     border-radius: 25px;
 }
 
+@media (max-width: 450px) {
+    .list {
+        padding-top: 0;
+        background-color: white;
+    }
+    .img-container {
+        margin-bottom: 0!important;
+        min-width: 320px;
+    }
+    nav ul {
+        padding-inline-start: 8px;
+    }
+    .container {
+        margin: 2% 5%;
+    }
+    .item-bg {
+        margin: 0px; 
+        width: 100%;
+    }
+    
+}
+
 .img-container{
     display: flex;
     justify-content: center;

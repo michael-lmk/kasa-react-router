@@ -2,7 +2,7 @@ import React from "react";
 import {
     BrowserRouter as Router,
     Route,
-    Routes
+    Routes,
 } from "react-router-dom";
 import AppContainer from "../appContainer/AppContainer";
 import AboutScreen from "../screens/aboutScreen/AboutScreen";
@@ -17,7 +17,7 @@ const Navigation = () => {
             <AppContainer>
                 <Routes>
                     <Route path="/" element={<HomeScreen />} />
-                    <Route path="/logement/:id" element={<AccommodationDetail />} />
+                    <Route path={"/logement/:id"} element={<AccommodationDetail />} />
                     <Route path="/qui-sommes-nous" element={<AboutScreen />} />
                     <Route path="*" element={<NotFoundScreen />} />
                 </Routes>

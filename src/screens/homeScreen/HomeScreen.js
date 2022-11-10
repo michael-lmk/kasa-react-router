@@ -14,7 +14,7 @@ const HomeScreen = () => {
             <div className='list'>
 
                 {json.map((logement, i) => {
-                    return <ItemLogement key={i} data={logement} />
+                    return <ItemLogement key={i} id={logement.id}  image={logement.cover} title={logement.title}/>
                 })}
             </div>
         </div>
