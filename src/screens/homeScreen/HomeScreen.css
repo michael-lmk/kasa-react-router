@@ -24,7 +24,7 @@ a {
         margin-bottom: 0!important;
         min-width: 320px;
     }
-    nav ul {
+    .nav ul {
         padding-inline-start: 8px;
     }
     .container {
